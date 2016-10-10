@@ -13,10 +13,15 @@ Run `bundle install` to install dependencies
 
 To run tests, run `rspec`
 
-To run the application, run `ruby app.rb`
+To run the application, run `rackup`
 
-Visit `http://localhost:4567`
+Visit `http://localhost:9292`
 
+Or:
+
+Visit the page hosted on Heroku:
+
+``
 
 <br>
 
