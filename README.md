@@ -21,7 +21,7 @@ Or:
 
 Visit the page hosted on Heroku:
 
-``
+`https://happy-sad.herokuapp.com/`
 
 <br>
 
