@@ -26,7 +26,7 @@ Visit the page hosted on Heroku:
 
 Reason for choosing Sinatra:
 
-* I chose Sinatra as it is very simple. I believe that it isn't worth using over-complicated technologies for a not-so complicated challenge.
+* I chose Sinatra as it is very simple, and it enabled me to build this application in a shorter time. As this challenge does not involve creating many files / views / models, Sinatra is a good fit. For larger projects, I would consider using Rails / MEAN stack.
 
 
 
