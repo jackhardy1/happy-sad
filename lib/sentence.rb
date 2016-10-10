@@ -1,9 +1,12 @@
 class Sentence
 
-  def initialize words
-    @words = words
-    @happy = ["delight", "delighted", "delightful", "happy", "glad", "joy", "joyful", "merry", "pleasant"]
-    @sad = ["disappointed", "miserable", "sad", "sorrow", "unhappy"]
+  HAPPY_WORDS = ["delight", "delighted", "delightful", "happy", "glad", "joy", "joyful", "merry", "pleasant"]
+  SAD_WORDS = ["disappointed", "miserable", "sad", "sorrow", "unhappy"]
+
+  def initialize sentence, happy_words = HAPPY_WORDS, sad_words = SAD_WORDS
+    @sentence = sentence
+    @happy = happy_words
+    @sad = sad_words
     @happy_count = 0
     @sad_count = 0
   end
@@ -14,6 +17,20 @@ class Sentence
 
   def self.instance
     @sentence
+  end
+
+  def words_array
+    @sentence.gsub(",","").gsub(".","").downcase.split(" ")
+  end
+
+  def categorize_words
+    words_array.each do |word|
+      if @sad.include?(word)
+        @sad_count += 1
+      elsif @happy.include?(word)
+        @happy_count += 1
+      end
+    end
   end
 
   def result
@@ -33,20 +50,6 @@ class Sentence
         'Unknown'
       end
     end
-  end
-
-  def categorize_words
-    words_array.each do |word|
-      if @sad.include?(word)
-        @sad_count += 1
-      elsif @happy.include?(word)
-        @happy_count += 1
-      end
-    end
-  end
-
-  def words_array
-    @words.gsub(",","").gsub(".","").downcase.split(" ")
   end
 
   def show_sentence

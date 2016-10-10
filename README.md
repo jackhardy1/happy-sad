@@ -8,7 +8,7 @@ Sad words: disappointed, miserable, sad, sorrow, unhappy
 Happy words: delight, delighted, delightful, happy, glad, joy, joyful, merry, pleasant
 
 #### Instructions for use
-<br>
+
 Run `bundle install` to install dependencies
 
 To run tests, run `rspec`
@@ -23,8 +23,15 @@ Visit the page hosted on Heroku:
 
 `https://happy-sad.herokuapp.com/`
 
-<br>
 
+Reason for choosing Sinatra:
+
+* I chose Sinatra as it is very simple. I believe that it isn't worth using over-complicated technologies for a not-so complicated challenge.
+
+
+
+
+#### Original Challenge Info
 
 Challenge: Happy // Sad
 Write a back-end service that classifies text as happy, sad or unknown

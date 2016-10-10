@@ -2,7 +2,6 @@ require 'sinatra'
 require 'sinatra/base'
 require_relative './lib/sentence'
 
-
 class HappySad < Sinatra::Base
 
   get '/' do
@@ -18,4 +17,5 @@ class HappySad < Sinatra::Base
     @sentence = Sentence.instance
     erb :result
   end
+
 end
