@@ -24,7 +24,7 @@ class Sentence
       "Sad"
     elsif @happy_count == 0 && @sad_count == 0
       "Unknown"
-    else  
+    else
       if (@happy_count / @sad_count).to_f > 1.5
         'Happy'
       elsif (@sad_count / @happy_count).to_f > 1.5
@@ -45,6 +45,10 @@ class Sentence
     end
   end
 
+  def words_array
+    @words.gsub(",","").gsub(".","").downcase.split(" ")
+  end
+
   def show_sentence
     @words
   end
@@ -55,10 +59,6 @@ class Sentence
 
   def show_sad_count
     @sad_count
-  end
-
-  def words_array
-    @words.gsub(",","").gsub(".","").downcase.split(" ")
   end
 
 end

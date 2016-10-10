@@ -26,5 +26,11 @@ describe Sentence do
       new_sentence = Sentence.new sentence
       expect(new_sentence.result).to eq 'Happy'
     end
+
+    it 'if no happy or sad words, the result is unknown' do
+      sentence = "This sentence has no words to be picked up"
+      new_sentence = Sentence.new sentence
+      expect(new_sentence.result).to eq "Unknown"
+    end
   end
 end
