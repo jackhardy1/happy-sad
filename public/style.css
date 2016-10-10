@@ -1,0 +1,50 @@
+@import 'https://fonts.googleapis.com/css?family=Lora';
+
+
+.container {
+  margin: 20px;
+  margin: auto;
+  margin-top: 20px;
+  border: dashed-black 1px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background-image: url('happy-sad.jpeg');
+  background-size: 100%;
+  background-position: 30% 35%;
+  background-repeat: no-repeat;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 500px){
+  .container {
+    margin: 20px;
+    margin: auto;
+    margin-top: 20px;
+  font-size: 10px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  .placeholder-text {
+    font-size: 10px;
+  }
+}
